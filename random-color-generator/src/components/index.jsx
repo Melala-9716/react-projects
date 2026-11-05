@@ -41,23 +41,26 @@ export default function ColorGenerator() {
    }
     return (
         <div>
-            <h1>Random Color Generator</h1>
+            <h1 className='text-[40px] text-[italic] text-center font-bold text-black'>Random Color Generator</h1>
 
-            <div>
-                <button onClick={ChangeRGB}>RGB Color</button>
-                <button onClick={ChangeHEX}>Hex Color</button>
-                <button onClick={random}>Random Color</button>
+            <div className='flex justify-center flex-row gap-[20px] text-[25px] my-[10px]'>
+                <button className='border-[3px] border-pink-950 p-[5px] rounded-2xl' onClick={ChangeRGB}>RGB Color</button>
+                <button className='border-[3px] border-pink-950 p-[5px] rounded-2xl' onClick={ChangeHEX}>Hex Color</button>
+                <button className='border-[3px] border-pink-950 p-[5px] rounded-2xl' onClick={random}>Random Color</button>
             </div>
 
             <div
                 style={{
                     backgroundColor: color,
                     border: "2px solid black",
-                    padding: "50px",
-                    minHeight: "100vh"
+                    minHeight: "100vh",
+                    margin:"20px",
+                    borderRadius:"10px"
+
                 }}
+                className='flex justify-center '
             >
-                <p className="text-8xl font-bold flex justify-center items-center ">{color}</p>
+                <p className="text-[50px] font-bold flex justify-center items-center ">{color}</p>
             </div>
         </div>
     );
