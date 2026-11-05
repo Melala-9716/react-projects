@@ -27,7 +27,18 @@ export default function ColorGenerator() {
        SetColor(GenerateRandomNumberHEX());
        setColorType("HEX");
    }
- 
+   function random(){
+
+     const randomType=Math.random()<0.5?"RGB":"HEX";
+
+     if(randomType==="RGB"){
+        SetColor(GenerateRGBCOLOR());
+     }
+     else{
+        SetColor(GenerateRandomNumberHEX());
+     }
+     setColorType(randomType);
+   }
     return (
         <div>
             <h1>Random Color Generator</h1>
@@ -35,6 +46,7 @@ export default function ColorGenerator() {
             <div>
                 <button onClick={ChangeRGB}>RGB Color</button>
                 <button onClick={ChangeHEX}>Hex Color</button>
+                <button onClick={random}>Random Color</button>
             </div>
 
             <div
