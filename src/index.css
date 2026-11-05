@@ -1,0 +1,16 @@
+@import "tailwindcss";
+body{
+  background-color:#D2B48C ;
+}
+@import "tailwindcss";
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
