@@ -24,7 +24,7 @@ An interactive FAQ accordion that allows users to expand and collapse questions 
 
 A simple application that generates random colors and displays their color values.
 
-**Planned and implemented features:**
+**Features:**
 - Generate random HEX colors
 - Generate random RGB colors
 - Generate random colors using either format
@@ -33,12 +33,35 @@ A simple application that generates random colors and displays their color value
 
 **Technologies:** React, JavaScript, Vite, Tailwind CSS
 
+### 3. Star Rating
+
+An interactive star rating application that allows users to rate an experience by selecting stars, see feedback based on their selection, and submit or reset their rating.
+
+**Features:**
+- Select a rating from 1 to 5 stars
+- Hover over stars for interactive feedback
+- Display a message based on the selected rating
+- Submit a rating
+- Reset the selected rating
+- Responsive user interface
+
+**Concepts practiced:**
+- React components
+- `useState` Hook
+- Event handling (`onClick`, `onMouseEnter`, `onMouseLeave`)
+- Conditional rendering
+- Array mapping with `.map()`
+- Dynamic CSS classes
+- Basic form interaction
+
+**Technologies:** React, JavaScript, Vite, CSS
+
 ## Tech Stack
 
 - **React** – Building user interfaces
 - **JavaScript** – Application logic
 - **Vite** – Development environment and build tool
-- **Tailwind CSS** – Styling and responsive layouts
+- **Tailwind CSS / CSS** – Styling and responsive layouts
 - **Git & GitHub** – Version control and project tracking
 
 ## Repository Structure
@@ -53,6 +76,12 @@ react-projects/
 │   └── ...
 │
 ├── random-color-generator/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+│
+├── star-rating/
 │   ├── public/
 │   ├── src/
 │   ├── package.json
@@ -95,4 +124,4 @@ To run another project, navigate into its folder and repeat the installation and
 
 This repository will continue to grow as I build more projects, practice React concepts, and improve my development skills.
 
-Each project represents
+Each project represents a step forward in my journey as a frontend developer.
