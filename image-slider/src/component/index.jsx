@@ -28,6 +28,23 @@ function Index(){
         description: "A Beautiful Night View"
     }
 ];
+function back(){
+    if(image>0){
+        setimage(image-1)
+    }
+    else{
+        setimage(images.length-1)
+    }
+}
+
+function front(){
+    if(image>=images.length-1){
+        setimage(0);
+    }
+    else{
+        setimage(image+1)
+    }
+}
     return(
          <div className="text-center py-[15px]">
     <h2 className="text-[30px] font-bold">
