@@ -46,14 +46,31 @@ function front(){
     }
 }
     return(
-         <div className="text-center py-[15px]">
-    <h2 className="text-[30px] font-bold">
-        {images[image].title}
-    </h2>
-    <p className="text-[18px] italic">
-        {images[image].description}
-    </p>
-</div>
+        <>
+    <h1 className='italic text-center py-[20px] text-[40px]'>Image Slider</h1>
+
+    <div className="flex justify-center lg:gap-[20px] ">
+        <button
+            className="text-[50px] text-red-700 pr-[10px] cursor-pointer lg:text-[80px]"
+            onClick={back}
+        >
+            ❮
+        </button>
+
+        <img
+            className='border border-red-700 border-[5px] w-[400px] h-[400px] lg:w-[800px] lg:h-[500px] rounded-[30px]'
+            src={images[image].image}
+            alt={images[image].title}
+        />
+
+        <button
+            className="lg:text-[80px] text-[50px] text-red-700 pr-[10px] cursor-pointer"
+            onClick={front}
+        >
+            ❯
+        </button>
+    </div>
+</>
     )
 };
 
