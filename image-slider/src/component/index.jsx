@@ -70,6 +70,17 @@ function front(){
             ❯
         </button>
     </div>
+    <div className='flex justify-center py-[20px] gap-[6px] cursor-pointer'>
+    {images.map((num, index) => (
+        <span
+            key={index}
+            onClick={()=>setimage(index)}
+            className={image===index ? "text-black text-[31px]" : "text-gray-400 text-[30px]"}
+        >
+            ○
+        </span>
+    ))}
+</div>
 </>
     )
 };
