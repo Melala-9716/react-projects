@@ -55,7 +55,27 @@ An interactive star rating application that allows users to rate an experience b
 - Basic form interaction
 
 **Technologies:** React, JavaScript, Vite, CSS
+### 4. Image Slider
 
+An interactive image slider that allows users to navigate through a collection of images using previous and next buttons.
+
+**Features:**
+
+- Display images in a slider.
+- Navigate between images using previous and next buttons.
+- Smooth image transitions.
+- Responsive user interface.
+
+**Concepts practiced:**
+
+- React components
+- `useState` Hook
+- Event handling
+- Conditional rendering
+- Array indexing
+- Dynamic image rendering
+
+**Technologies:** React, JavaScript, Vite, CSS
 ## Tech Stack
 
 - **React** – Building user interfaces
