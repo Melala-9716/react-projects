@@ -8,6 +8,15 @@ function Index({ products }) {
         SetVisibleProducts(previous => previous + 10);
     }
 
+    function Reset() {
+        SetVisibleProducts(10);
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
     return (
         <div>
             {products.slice(0, visibleProducts).map((product) => (
@@ -29,6 +38,16 @@ function Index({ products }) {
                     Show More
                 </button>
             )}
+
+            {visibleProducts > 10 && (
+                <button onClick={Reset}>
+                    Reset
+                </button>
+            )}
+
+            <h3>
+                Showing {Math.min(visibleProducts, products.length)} products
+            </h3>
         </div>
     );
 }
