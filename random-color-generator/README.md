@@ -1,16 +1,71 @@
-# React + Vite
+# Random Color Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive color generator built with React. It allows users to generate random colors in HEX and RGB formats, view the generated colors, and copy their color values.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Generate random HEX colors.
+- Generate random RGB colors.
+- Choose between HEX and RGB color formats.
+- Display the generated color as a background.
+- Show the generated color value.
+- Copy color values to the clipboard.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript (JSX)
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React components
+- `useState` Hook
+- Event handling (`onClick`)
+- JavaScript random number generation
+- Working with HEX and RGB color values
+- Conditional rendering
+- Dynamic inline styling
+- Clipboard API
+- Managing and updating component state
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Melala-9716/react-projects.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd react-projects/random-color-generator
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## What I Learned
+
+Through this project, I practiced generating random values with JavaScript, managing state in React, dynamically changing styles, and working with the Clipboard API.
+
+It helped me understand how JavaScript logic and React state can work together to create interactive user interfaces.
+
+## Author
+
+Melala Muleta
+
+[GitHub Repository](https://github.com/Melala-9716/react-projects)
