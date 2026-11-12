@@ -1,16 +1,70 @@
-# React + Vite
+]# FAQ Accordion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive FAQ accordion built with React. Users can click on questions to expand or collapse them and view their corresponding answers.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Display a list of frequently asked questions.
+- Click a question to reveal its answer.
+- Expand and collapse answers interactively.
+- Keep the interface simple and user-friendly.
+- Responsive user interface.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript (JSX)
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React components
+- Props
+- `useState` Hook
+- Event handling (`onClick`)
+- Conditional rendering
+- Rendering lists with `.map()`
+- Importing and exporting modules
+- Reusable components
+- Responsive UI design
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Melala-9716/react-projects.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd react-projects/faq-accordion
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## What I Learned
+
+Through this project, I practiced building interactive React components, managing component state with `useState`, handling click events, and displaying content conditionally.
+
+It helped me understand how React updates the user interface when the state changes.
+
+## Author
+
+Melala Muleta
+
+[GitHub Repository](https://github.com/Melala-9716/react-projects)
