@@ -1,16 +1,70 @@
-# React + Vite
+# Star Rating
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive star rating application built with React. Users can select a rating from 1 to 5 stars, receive feedback based on their selection, and submit or reset their rating.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Select a rating from 1 to 5 stars.
+- Hover over stars for interactive visual feedback.
+- Display a message based on the selected rating.
+- Submit a rating.
+- Reset the selected rating.
+- Responsive user interface.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript (JSX)
+- Vite
+- CSS
 
-## Expanding the ESLint configuration
+## Concepts Practiced
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React components
+- `useState` Hook
+- Event handling (`onClick`, `onMouseEnter`, `onMouseLeave`)
+- Conditional rendering
+- Rendering lists with `.map()`
+- Dynamic CSS classes
+- Managing selected and hovered states
+- Basic form interaction
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash id="a3m5fx"
+git clone https://github.com/Melala-9716/react-projects.git
+```
+
+### 2. Navigate to the project folder
+
+```bash id="c7g8qk"
+cd react-projects/star-rating
+```
+
+### 3. Install dependencies
+
+```bash id="d4k9px"
+npm install
+```
+
+### 4. Start the development server
+
+```bash id="e2j6vn"
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## What I Learned
+
+Through this project, I practiced managing multiple state values in React, handling mouse and click events, rendering interactive elements, and updating the interface based on user interactions.
+
+It helped me understand how state can control interactive components and provide immediate feedback to users.
+
+## Author
+
+Melala Muleta
+
+[GitHub Repository](https://github.com/Melala-9716/react-projects)
