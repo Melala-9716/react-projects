@@ -262,6 +262,39 @@ function Index({ products }) {
 
 </main>
 
+{/* About Section */}
+<section id="about" className="bg-[#ead9d3] px-6 py-16 text-center">
+
+    <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#a36d75]">
+        A Note from ÉLORA
+    </p>
+
+    <h2 className="font-serif text-3xl italic text-[#542f3b] md:text-4xl">
+        Beauty is not about perfection.
+        <span className="block">It's about feeling like yourself.</span>
+    </h2>
+
+</section>
+
+{/* Footer */}
+<footer className="bg-[#542f3b] px-6 py-12 text-center text-white">
+
+    <h2 className="font-serif text-3xl font-bold tracking-[0.2em]">
+        ÉLORA.
+    </h2>
+
+    <p className="mt-4 text-xs tracking-[0.2em] text-[#e4c9c5]">
+        YOUR BEAUTY. YOUR STORY.
+    </p>
+
+    <div className="mx-auto my-7 h-px w-16 bg-[#bd858b]"></div>
+
+    <p className="text-xs text-[#d8c1bc]">
+        © 2026 ÉLORA Beauty. Created with care.
+    </p>
+
+</footer>
+
 </div>
 
     );
