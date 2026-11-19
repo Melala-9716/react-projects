@@ -26,7 +26,19 @@ export default function MenuList() {
                     {isOpen.includes(data.id) && (
                         data.children.map((child) => (
                             <div key={child.id}>
-                                {child.label}
+                                <button onClick={() => toggleMenu(child.id)}>
+                                    {isOpen.includes(child.id) ? "-" : "+"}
+                                </button>
+
+                                <span>{child.label}</span>
+
+                                {isOpen.includes(child.id) && (
+                                    child.children.map((y) => (
+                                        <div key={y.id}>
+                                            {y.label}
+                                        </div>
+                                    ))
+                                )}
                             </div>
                         ))
                     )}
