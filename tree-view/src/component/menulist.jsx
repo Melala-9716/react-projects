@@ -22,6 +22,14 @@ export default function MenuList() {
                     </button>
 
                     <span>{data.label}</span>
+
+                    {isOpen.includes(data.id) && (
+                        data.children.map((child) => (
+                            <div key={child.id}>
+                                {child.label}
+                            </div>
+                        ))
+                    )}
                 </div>
             ))}
         </>
