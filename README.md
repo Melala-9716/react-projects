@@ -76,6 +76,51 @@ An interactive image slider that allows users to navigate through a collection o
 - Dynamic image rendering
 
 **Technologies:** React, JavaScript, Vite, CSS
+### 5. Cosmetics Load More
+
+A cosmetics product application that fetches product data from the DummyJSON API and displays cosmetics products dynamically.
+
+**Features:**
+- Fetch cosmetics products from an external API
+- Display products dynamically
+- Show more products using a Load More button
+- Increase the number of visible products
+- Reset the product list to its initial state
+
+**Concepts practiced:**
+- React components
+- API integration using `fetch`
+- `useState` Hook
+- `useEffect` Hook
+- Props and component communication
+- Array methods (`filter`, `slice`)
+- Conditional rendering
+- Handling API data
+
+**Technologies:** React, JavaScript, Vite, Tailwind CSS, DummyJSON API
+
+### 6. Tree View
+
+An interactive Tree View menu that displays nested menu items and allows users to expand and collapse different menu levels.
+
+**Features:**
+- Display nested menu items
+- Expand and collapse parent menus
+- Expand and collapse child menus
+- Display multiple levels of nested menus
+- Interactive buttons to control menu visibility
+
+**Concepts practiced:**
+- React components
+- `useState` Hook
+- Event handling
+- Conditional rendering
+- Nested array mapping with `.map()`
+- Array methods (`includes`, `filter`)
+- Managing state with unique IDs
+
+**Technologies:** React, JavaScript, Vite, Tailwind CSS
+
 ## Tech Stack
 
 - **React** – Building user interfaces
@@ -106,7 +151,16 @@ react-projects/
 │   ├── src/
 │   ├── package.json
 │   └── ...
+│├── cosmetics-load-more/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── ...
 │
+└── tree-view/
+    ├── src/
+    ├── package.json
+    └── README.md
 └── README.md
 ```
 
