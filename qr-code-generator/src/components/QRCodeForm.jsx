@@ -5,9 +5,10 @@ export default function QRCodeForm() {
     const [enter, SetEnter] = useState("");
     const [Submitted, SetSubmiited] = useState("");
 
-function subbmite() {
+function subbmite(event) {
     SetSubmiited(enter);
     SetEnter("");
+    event.preventDefault();
 }
 
 function Change(event) {
@@ -16,14 +17,16 @@ function Change(event) {
 
     return (
         <>
-
-<input
+<form onSubmit={subbmite}>
+    <input
     value={enter}
     placeholder="Enter text or URL"
     onChange={(event) => Change(event)}
 ></input>
 
 <button onClick={subbmite}>Submit</button>
+</form>
+
 
 <QRCodeDisplay value={Submitted}></QRCodeDisplay>
 
