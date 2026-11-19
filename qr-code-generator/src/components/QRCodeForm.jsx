@@ -1,10 +1,12 @@
-import {useState} from "react";
+
+import { useState } from "react";
 
 export default function QRCodeForm() {
-    return(
-        <>
-       
-        </>
-    )
+    const [enter, SetEnter] = useState("");
+    const [Submitted, SetSubmiited] = useState("");
 
+    return (
+        <>
+        </>
+    );
 }
