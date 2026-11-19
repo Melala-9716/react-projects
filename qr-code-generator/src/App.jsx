@@ -1,11 +1,12 @@
+import QRCodeForm from './components/QRCodeForm.jsx';
+
 function App() {
   return (
-    <div className="min-h-screen bg-red-500 flex items-center justify-center">
-      <h1 className="text-5xl font-bold text-white">
-        Tailwind is working!
-      </h1>
+    <div>
+      <h1>QR Code Generator</h1>
+      <QRCodeForm />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
