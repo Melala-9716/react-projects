@@ -6,6 +6,9 @@ export default function QRCodeForm() {
     const [Submitted, SetSubmiited] = useState("");
 
 function subbmite(event) {
+    if(enter.trim()=== ""){
+    return;
+}
     SetSubmiited(enter);
     SetEnter("");
     event.preventDefault();
@@ -13,7 +16,7 @@ function subbmite(event) {
 
 function Change(event) {
     SetEnter(event.target.value);
-}
+} 
 
     return (
    
@@ -25,6 +28,7 @@ function Change(event) {
         </label>
 
         <input
+        required
             value={enter}
             placeholder="https://example.com"
             onChange={(event) => Change(event)}
