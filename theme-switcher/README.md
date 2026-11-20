@@ -1,16 +1,92 @@
-# React + Vite
+# FocusSpace – Theme Switcher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive dashboard built with React and Tailwind CSS, featuring a light and dark mode toggle.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+FocusSpace is a dashboard interface designed to help users visualize their workspace, track project progress, and view recent activities. It includes a theme switcher that allows users to switch between light and dark appearances.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Light and Dark Mode:** Switch between two themes using the navbar toggle.
+- **Responsive Layout:** Dashboard layout adapts to different screen sizes.
+- **Sidebar Navigation:** Navigation links for dashboard, tasks, calendar, messages, and settings.
+- **Dashboard Overview:** Displays project statistics and productivity information.
+- **Recent Projects:** Shows projects and their progress.
+- **Recent Activities:** Displays recent workspace activities.
+- **Reusable Components:** Interface organized into separate React components.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (JSX)
+- Tailwind CSS
+- Vite
+
+## Project Structure
+
+```text
+theme-switcher/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Activity.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Navbar.jsx
+│   │   └── Sidebar.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+└── README.md
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Melala-9716/react-projects.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd react-projects/theme-switcher
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## What I Practiced
+
+Through this project, I practiced:
+
+- React `useState` for managing theme state.
+- Props for sharing state between parent and child components.
+- Event handling with `onClick`.
+- Conditional rendering and conditional CSS classes.
+- Tailwind CSS utility classes.
+- Component-based architecture.
+- Responsive dashboard layouts.
+
+## Author
+
+**Melala Muleta**
+
+Software Engineering Student | Frontend Developer
+
+---
+
+Built as part of my React learning journey.
