@@ -55,16 +55,16 @@ function downloadQR() {
     return (
         
         <>
-      <div className="border-2 border-gray-500 rounded-2xl p-5 my-[20px] mx-[70px]">
+      <div className="border-2 border-gray-500 rounded-2xl p-5 my-[20px] mx-[70px] lg:mx-[500px]">
 
     <div className="border-2 border-gray-300 rounded-xl p-4">
-     <div  className="mx-[45px]">
+     <div  className="mx-[130px]">
           <QRCodeSVG id="qr-code" value={value} size={180} />  
      </div>
     </div>
 
 </div>
-<button className="w-[90%] mx-[25px] my-[10px] bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 rounded-lg transition duration-200"
+<button className="w-[90%] mx-[25px] my-[10px] bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 rounded-lg transition duration-200 lg:w-[34%] lg:mx-[500px]"
  onClick={downloadQR}>
     Download QR Code
 </button>

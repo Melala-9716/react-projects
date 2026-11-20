@@ -3,7 +3,7 @@ import { QrCode } from "lucide-react";
 function App() {
   return (
     <div>
-      <div className='flex justify-between items-center m-[40px]'>
+      <div className='flex justify-between items-center m-[40px] lg:mx-[100px]'>
           <div className='flex items-center gap-[5px] '>
            <QrCode size={50} className='p-[1px] border border-amber-50 rounded-[6px] bg-blue-500 text-white'></QrCode>
            <p className='text-[20px] italic font-bold'>QR Studio</p>
