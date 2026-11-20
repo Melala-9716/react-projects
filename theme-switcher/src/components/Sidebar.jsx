@@ -1,8 +1,15 @@
-export default function Sidebar() {
-  return (
-    <aside className="row-span-3 bg-white border-r border-gray-200 p-6 min-h-screen">
 
-      <h2 className="text-xl font-bold text-purple-700 mb-10">
+export default function Sidebar({ Value }) {
+  return (
+    <aside className={`row-span-3 border-r p-6 min-h-screen ${
+      Value
+        ? "bg-[#1F2937] border-[#374151]"
+        : "bg-white border-gray-200"
+    }`}>
+
+      <h2 className={`text-xl font-bold mb-10 ${
+        Value ? "text-[#A78BFA]" : "text-purple-700"
+      }`}>
         FocusSpace
       </h2>
 
@@ -12,37 +19,41 @@ export default function Sidebar() {
 
       <ul className="flex flex-col gap-3">
 
-        <li className="bg-purple-100 text-purple-700 rounded-lg p-3 font-semibold">
+        <li className={`rounded-lg p-3 font-semibold ${
+          Value
+            ? "bg-purple-900/40 text-[#C4B5FD]"
+            : "bg-purple-100 text-purple-700"
+        }`}>
           Dashboard
         </li>
 
-        <li className="text-gray-500 hover:bg-gray-100 rounded-lg p-3 cursor-pointer">
-          My Tasks
-        </li>
-
-        <li className="text-gray-500 hover:bg-gray-100 rounded-lg p-3 cursor-pointer">
-          Completed Tasks
-        </li>
-
-        <li className="text-gray-500 hover:bg-gray-100 rounded-lg p-3 cursor-pointer">
-          Calendar
-        </li>
-
-        <li className="text-gray-500 hover:bg-gray-100 rounded-lg p-3 cursor-pointer">
-          Messages
-        </li>
-
-        <li className="text-gray-500 hover:bg-gray-100 rounded-lg p-3 cursor-pointer">
-          Settings
-        </li>
+        {["My Tasks", "Completed Tasks", "Calendar", "Messages", "Settings"].map((item) => (
+          <li
+            key={item}
+            className={`rounded-lg p-3 cursor-pointer transition ${
+              Value
+                ? "text-[#9CA3AF] hover:bg-[#374151] hover:text-white"
+                : "text-gray-500 hover:bg-gray-100"
+            }`}
+          >
+            {item}
+          </li>
+        ))}
 
       </ul>
 
-      <div className="mt-16 bg-purple-50 rounded-xl p-4">
-        <h3 className="font-semibold text-purple-800">
+      <div className={`mt-16 rounded-xl p-4 ${
+        Value ? "bg-purple-900/30" : "bg-purple-50"
+      }`}>
+        <h3 className={`font-semibold ${
+          Value ? "text-[#C4B5FD]" : "text-purple-800"
+        }`}>
           Stay productive!
         </h3>
-        <p className="text-sm text-gray-500 mt-2">
+
+        <p className={`text-sm mt-2 ${
+          Value ? "text-[#9CA3AF]" : "text-gray-500"
+        }`}>
           Small steps lead to big achievements.
         </p>
       </div>
