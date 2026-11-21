@@ -121,6 +121,34 @@ An interactive Tree View menu that displays nested menu items and allows users t
 
 **Technologies:** React, JavaScript, Vite, Tailwind CSS
 
+### 7. Theme Switcher – FocusSpace Dashboard
+
+A responsive dashboard application that allows users to switch between light and dark themes while viewing workspace statistics, recent projects, and activities.
+
+**Features:**
+
+- Toggle between light and dark modes
+- Responsive dashboard layout
+- Sidebar navigation
+- Display project statistics and productivity information
+- Show recent projects and their progress
+- Display recent workspace activities
+- Consistent styling across both themes
+
+**Concepts practiced:**
+
+- React components
+- `useState` Hook
+- Props and component communication
+- Event handling (`onClick`)
+- Conditional CSS classes
+- Template literals
+- Tailwind CSS utility classes
+- Lifting state up
+- Responsive UI design
+
+**Technologies:** React, JavaScript, Vite, Tailwind CSS
+
 ## Tech Stack
 
 - **React** – Building user interfaces
@@ -161,6 +189,21 @@ react-projects/
     ├── src/
     ├── package.json
     └── README.md
+└── README.md
+react-projects/
+│
+├── faq-accordion/
+├── random-color-generator/
+├── star-rating/
+├── image-slider/
+├── cosmetics-load-more/
+├── tree-view/
+├── theme-switcher/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── README.md
+│
 └── README.md
 ```
 
